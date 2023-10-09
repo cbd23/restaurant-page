@@ -1,3 +1,188 @@
 * {
-    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    
+    /* background-color: lightblue; */
+}
+
+#content {
+    /* border: 2px solid red; */
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: bisque;
+    font-size: 1rem;
+    font-weight: 600;
+
+    height: 80px;
+    display: flex;
+}
+
+.header-leftside {
+    /* border: 2px solid green; */
+
+    display: flex;
+
+    flex: 1;
+}
+
+.logo {
+    flex: 1;
+
+    height: 150px;
+}
+
+img[src="../src/logo.png"] {
+    /* border: 2px solid black; */
+
+    margin-left: 18px;
+
+    cursor: pointer;
+}
+
+.header-rightside {
+    margin-top: 8px;
+
+    display: flex;
+    flex-direction: row;
+
+    flex: 1;
+}
+
+.about,
+.book,
+.gallery,
+.contact {
+    border: 2px solid blueviolet;
+
+    height: 1rem;
+    
+    display: flex;
+    justify-content: center;
+
+    flex: 1;
+
+    cursor: pointer;
+}
+
+.tabs { 
+    font-size: 1rem;
+    font-weight: 600;
+
+    flex: 1 1 66px;
+
+    display: flex;
+}
+
+.tab-placeholder {
+    background-color: #8c5fa8;
+
+    display: flex;
+
+    flex: 1;
+}
+
+.tab-option {
+    /* border: 1px solid black; */
+
+    background-color: #8c5fa8;
+    color:whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+    cursor: pointer;
+}
+
+svg {
+    background-color: #8c5fa8;
+    height: 40px;
+}
+
+.tab-text {
+    background-color: #8c5fa8;
+}
+
+.display {
+    background-color: bisque;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 10;
+}
+
+.section {
+    border: 2px solid sandybrown;
+    flex: 1;
+
+}
+
+.stuff {
+    border: 2px solid red;
+
+    flex: 10;
+
+    display: grid;
+
+    margin: 60px 160px;
+    gap: 40px 20px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.item {
+    background-color: white;
+
+    border: 2px solid black;
+    border-radius: 8px;
+
+    display: flex;
+
+}
+
+.item-pic {
+    margin-right: 16px;
+    
+    flex: 1;
+    align-self: center;
+}
+
+.item-pic > img {
+    border-radius: 8px;    
+}
+
+.item-text {
+
+    flex: 5;
+}
+
+.item-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    margin-top: 8px;
+}
+
+.item-description {
+    margin-top: 8px;
+}
+
+.item-price {
+    margin-top: 8px;
+    margin-right: 6px;
+
+    flex: 2;
+    text-align: end;
 }
