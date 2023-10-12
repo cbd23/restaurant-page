@@ -57,15 +57,21 @@ img[src="../src/logo.png"] {
 .book,
 .gallery,
 .contact {
-    border: 2px solid blueviolet;
-
-    height: 1rem;
+    color: white;
+    background-color: #8c5fa8;
+    border-radius: 20px;
+    padding-top: 6px;
+    margin: 8px;
     
+    height: 2rem;
+    font-size: 1.1rem;
+
+
+
     display: flex;
     justify-content: center;
 
     flex: 1;
-
     cursor: pointer;
 }
 
@@ -127,7 +133,7 @@ svg {
 }
 
 .stuff {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
     flex: 10;
 
@@ -143,7 +149,7 @@ svg {
 .item {
     background-color: white;
 
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 8px;
 
     display: flex;
