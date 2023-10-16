@@ -195,8 +195,6 @@ formerTab = pizzaTab;
 content.appendChild(pizzaTab);
 
 tabOptionOne.addEventListener('pointerdown', () => {
-    console.log('PIZZA TAB BTN was pressed!');
-
     content.removeChild(formerTab);
 
     activeTab = pizzaTab;
@@ -206,8 +204,6 @@ tabOptionOne.addEventListener('pointerdown', () => {
 });
 
 tabOptionTwo.addEventListener('pointerdown', () => {
-    console.log('BURGERS TAB BTN was pressed!');
-
     content.removeChild(formerTab);
 
     activeTab = burgersTab;
@@ -217,8 +213,6 @@ tabOptionTwo.addEventListener('pointerdown', () => {
 });
 
 tabOptionThree.addEventListener('pointerdown', () => {
-    console.log('SIDES TAB BTN was pressed!');
-
     content.removeChild(formerTab);
 
     activeTab = sidesTab;
