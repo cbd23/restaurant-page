@@ -2,6 +2,7 @@ import './style.css';
 
 import { renderPizzaDisplay } from '../src/display-modules/pizza';
 import { renderBurgersDisplay } from '../src/display-modules/burgers';
+import { renderSidesDisplay } from '../src/display-modules/sides';
 
 const content = document.getElementById('content');
 
@@ -10,13 +11,11 @@ const content = document.getElementById('content');
 const header = document.createElement('div');
 header.classList.add('header');
 
-
 const headerLeftside = document.createElement('div');
 headerLeftside.classList.add('header-leftside');
 
 const logo = document.createElement('div');
 logo.classList.add('logo');
-
 
 const logoImg = document.createElement('img');
 logoImg.src = '../src/logo.png';
@@ -183,6 +182,7 @@ content.appendChild(tabs);
 
 let pizzaTab = renderPizzaDisplay();
 let burgersTab = renderBurgersDisplay();
+let sidesTab = renderSidesDisplay();
 
 // is the one that's currently appended
 let activeTab;
@@ -214,4 +214,15 @@ tabOptionTwo.addEventListener('pointerdown', () => {
     content.appendChild(activeTab);
 
     formerTab = burgersTab;
+});
+
+tabOptionThree.addEventListener('pointerdown', () => {
+    console.log('SIDES TAB BTN was pressed!');
+
+    content.removeChild(formerTab);
+
+    activeTab = sidesTab;
+    content.appendChild(activeTab);
+
+    formerTab = sidesTab;
 });
