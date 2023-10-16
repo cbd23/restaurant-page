@@ -11,14 +11,14 @@ export function renderSidesDisplay() {
             name: 'Onion Rings',
             description: 'simply delicious, nothing more to say here',
             price: ['$8'],
-            imageSrc: 'https://github.com/cbd23/restaurant-page/blob/main/src/sides-types/onion-rings.jpg',
+            imageSrc: 'https://raw.githubusercontent.com/cbd23/restaurant-page/main/src/sides-types/onion-rings.jpg',
         },
 
         {
             name: 'Poutine',
             description: 'irresistible french fries and magnifique cheese curds topped with a brown gravy',
             price: ['$10'],
-            imageSrc: 'https://github.com/cbd23/restaurant-page/blob/main/src/sides-types/poutine.jpeg',
+            imageSrc: 'https://raw.githubusercontent.com/cbd23/restaurant-page/main/src/sides-types/poutine.jpeg',
         },
     ];
 
