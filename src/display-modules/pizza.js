@@ -11,42 +11,42 @@ export function renderPizzaDisplay() {
             name: 'La Rossa',
             description: 'tomato sauce, garlic, basil (no cheese)',
             price: ['$15'],
-            imageSrc: '../src/pizza-types/pizza1.jpeg',
+            imageSrc: 'https://github.com/cbd23/restaurant-page/blob/main/src/pizza-types/pizza1.jpeg',
         },
 
         {
             name: 'Margherita',
             description: 'tomato sauce, fresh mozzarella, basil, sea salt, California extra virgin olive oil',
             price: ['$17'],
-            imageSrc: '../src/pizza-types/pizza2.jpeg',
+            imageSrc: 'https://github.com/cbd23/restaurant-page/blob/main/src/pizza-types/pizza2.jpeg',
         },
 
         {
             name: 'Pepperoni',
             description: 'tomato sauce, burrata, garlic, basil',
             price: ['$19'],
-            imageSrc: '../src/pizza-types/pizza3.jpeg',
+            imageSrc: 'https://github.com/cbd23/restaurant-page/blob/main/src/pizza-types/pizza3.jpeg',
         },
 
         {
             name: 'Bosco',
             description: 'tomato sauce, fresh mozzarella, cremini mushrooms, fontina',
             price: ['$17'],
-            imageSrc: '../src/pizza-types/pizza4.jpeg',
+            imageSrc: 'https://github.com/cbd23/restaurant-page/blob/main/src/pizza-types/pizza4.jpeg',
         },
 
         {
             name: 'Burrata',
             description: 'tomato sauce, burrata, garlic, basil',
             price: ['$18'],
-            imageSrc: '../src/pizza-types/pizza5.jpeg',
+            imageSrc: 'https://github.com/cbd23/restaurant-page/blob/main/src/pizza-types/pizza5.jpeg',
         },
 
         {
             name: 'Jersey Margherita',
             description: 'crushed NJ tomatoes, Jersey Girl mozzarella, basil',
             price: ['$19'],
-            imageSrc: '../src/pizza-types/pizza6.jpeg',
+            imageSrc: 'https://github.com/cbd23/restaurant-page/blob/main/src/pizza-types/pizza6.jpeg',
         },
     ];
 

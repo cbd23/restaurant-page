@@ -18,7 +18,7 @@ const logo = document.createElement('div');
 logo.classList.add('logo');
 
 const logoImg = document.createElement('img');
-logoImg.src = '../src/logo.png';
+logoImg.src = 'https://github.com/cbd23/restaurant-page/blob/main/src/logo.png';
 logoImg.setAttribute('height', '80px');
 
 const headerRightside = document.createElement('div');
