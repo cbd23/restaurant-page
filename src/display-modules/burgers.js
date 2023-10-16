@@ -2,171 +2,78 @@ export function renderBurgersDisplay() {
 
     const display = document.createElement('div');
     display.classList.add('display');
-    
+
     const stuff = document.createElement('div');
     stuff.classList.add('stuff');
-    
-    //1st item
-    
-    const itemOne = document.createElement('div');
-    itemOne.classList.add('item');
-    
-    const itemPicOneContainer = document.createElement('div');
-    itemPicOneContainer.classList.add('item-pic');
-    
-    const itemPicOne = document.createElement('img');
-    itemPicOne.setAttribute('src', '../src/hamburger-types/hamburger1.jpeg');
-    itemPicOne.setAttribute('alt', 'hamburger');
-    itemPicOne.setAttribute('height', '150px');
-    
-    const itemTextOne = document.createElement('div');
-    itemTextOne.classList.add('item-text');
-    
-    const itemNameOne = document.createElement('div');
-    itemNameOne.classList.add('item-name');
-    itemNameOne.innerText = 'Chicken Burger';
-    
-    const itemDescriptionOne = document.createElement('div');
-    itemDescriptionOne.classList.add('item-description');
-    itemDescriptionOne.innerText = 'Delicious lorem ipsum tasty yummy and whatever you like.';
-    
-    const itemPriceOne = document.createElement('div');
-    itemPriceOne.classList.add('item-price');
-    itemPriceOne.innerText = '$15 / $24';
-    
-    //2nd item
-    
-    const itemTwo = document.createElement('div');
-    itemTwo.classList.add('item');
-    
-    const itemPicTwoContainer = document.createElement('div');
-    itemPicTwoContainer.classList.add('item-pic');
-    
-    const itemPicTwo = document.createElement('img');
-    itemPicTwo.setAttribute('src', '../src/hamburger-types/hamburger2.jpeg');
-    itemPicTwo.setAttribute('alt', 'hamburger');
-    itemPicTwo.setAttribute('height', '150px');
-    
-    const itemTextTwo = document.createElement('div');
-    itemTextTwo.classList.add('item-text');
-    
-    const itemNameTwo = document.createElement('div');
-    itemNameTwo.classList.add('item-name');
-    itemNameTwo.innerText = 'Double Beefburger';
-    
-    const itemDescriptionTwo = document.createElement('div');
-    itemDescriptionTwo.classList.add('item-description');
-    itemDescriptionTwo.innerText = 'Delicious lorem ipsum tasty yummy and whatever you like.';
-    
-    const itemPriceTwo = document.createElement('div');
-    itemPriceTwo.classList.add('item-price');
-    itemPriceTwo.innerText = '$17 / $26';
-    
-    //3rd item
-    
-    const itemThree = document.createElement('div');
-    itemThree.classList.add('item');
-    
-    const itemPicThreeContainer = document.createElement('div');
-    itemPicThreeContainer.classList.add('item-pic');
-    
-    const itemPicThree = document.createElement('img');
-    itemPicThree.setAttribute('src', '../src/hamburger-types/hamburger3.jpeg');
-    itemPicThree.setAttribute('alt', 'hamburger');
-    itemPicThree.setAttribute('height', '150px');
-    
-    const itemTextThree = document.createElement('div');
-    itemTextThree.classList.add('item-text');
-    
-    const itemNameThree = document.createElement('div');
-    itemNameThree.classList.add('item-name');
-    itemNameThree.innerText = 'Double Cheeseburger';
-    
-    const itemDescriptionThree = document.createElement('div');
-    itemDescriptionThree.classList.add('item-description');
-    itemDescriptionThree.innerText = 'Delicious lorem ipsum tasty yummy and whatever you like.';
-    
-    const itemPriceThree = document.createElement('div');
-    itemPriceThree.classList.add('item-price');
-    itemPriceThree.innerText = '$19 / $32';
-    
-    //4th item
-    
-    const itemFour = document.createElement('div');
-    itemFour.classList.add('item');
-    
-    const itemPicFourContainer = document.createElement('div');
-    itemPicFourContainer.classList.add('item-pic');
-    
-    const itemPicFour = document.createElement('img');
-    itemPicFour.setAttribute('src', '../src/hamburger-types/hamburger4.jpeg');
-    itemPicFour.setAttribute('alt', 'hamburger');
-    itemPicFour.setAttribute('height', '150px');
-    
-    const itemTextFour = document.createElement('div');
-    itemTextFour.classList.add('item-text');
-    
-    const itemNameFour = document.createElement('div');
-    itemNameFour.classList.add('item-name');
-    itemNameFour.innerText = 'Chicago Special Burger';
-    
-    const itemDescriptionFour = document.createElement('div');
-    itemDescriptionFour.classList.add('item-description');
-    itemDescriptionFour.innerText = 'Delicious lorem ipsum tasty yummy and whatever you like.';
-    
-    const itemPriceFour = document.createElement('div');
-    itemPriceFour.classList.add('item-price');
-    itemPriceFour.innerText = '$17 / $25';
 
+    const burgerTypes = [
+        {
+            name: 'Chicken Burger',
+            description: 'fresh chicken and other ingredients that will make you remember it',
+            price: ['$12'],
+            imageSrc: '../src/hamburger-types/hamburger1.jpeg',
+        },
 
-    // Appending elements from the DISPLAY section
+        {
+            name: 'Double Beefburger',
+            description: 'the best beef in town, sliced tomatoes, onion, cheese and fresh salad',
+            price: ['$15'],
+            imageSrc: '../src/hamburger-types/hamburger2.jpeg',
+        },
 
-    itemPicOneContainer.appendChild(itemPicOne);
+        {
+            name: 'Double Cheeseburger',
+            description: `it's a double cheese, you'll love it no matter what's inside, right?`,
+            price: ['$14'],
+            imageSrc: '../src/hamburger-types/hamburger3.jpeg',
+        },
 
-    itemTextOne.appendChild(itemNameOne);
-    itemTextOne.appendChild(itemDescriptionOne);
+        {
+            name: 'Chicago Special Burger',
+            description: `we would love to tell you more about this one, but then we would have to simply call it "Chicago Burger"`,
+            price: ['$17'],
+            imageSrc: '../src/hamburger-types/hamburger4.jpeg',
+        },
+    ];
 
-    itemOne.appendChild(itemPicOneContainer);
-    itemOne.appendChild(itemTextOne);
-    itemOne.appendChild(itemPriceOne);
+    burgerTypes.forEach((burgerType) => {
+        const item = document.createElement('div');
+        item.classList.add('item');
 
+        const itemPicContainer = document.createElement('div');
+        itemPicContainer.classList.add('item-pic');
 
-    itemPicTwoContainer.appendChild(itemPicTwo);
+        const itemPic = document.createElement('img');
+        itemPic.setAttribute('src', burgerType.imageSrc);
+        itemPic.setAttribute('alt', 'burger');
+        itemPic.setAttribute('height', '150px');
 
-    itemTextTwo.appendChild(itemNameTwo);
-    itemTextTwo.appendChild(itemDescriptionTwo);
+        const itemText = document.createElement('div');
+        itemText.classList.add('item-text');
 
-    itemTwo.appendChild(itemPicTwoContainer);
-    itemTwo.appendChild(itemTextTwo);
-    itemTwo.appendChild(itemPriceTwo);
+        const itemName = document.createElement('div');
+        itemName.classList.add('item-name');
+        itemName.innerText = burgerType.name;
 
+        const itemDescription = document.createElement('div');
+        itemDescription.classList.add('item-description');
+        itemDescription.innerText = burgerType.description;
 
-    itemPicThreeContainer.appendChild(itemPicThree);
+        const itemPrice = document.createElement('div');
+        itemPrice.classList.add('item-price');
+        itemPrice.innerText = burgerType.price;
 
-    itemTextThree.appendChild(itemNameThree);
-    itemTextThree.appendChild(itemDescriptionThree);
+        itemPicContainer.appendChild(itemPic);
+        itemText.appendChild(itemName);
+        itemText.appendChild(itemDescription);
+        item.appendChild(itemPicContainer);
+        item.appendChild(itemText);
+        item.appendChild(itemPrice);
 
-    itemThree.appendChild(itemPicThreeContainer);
-    itemThree.appendChild(itemTextThree);
-    itemThree.appendChild(itemPriceThree);
-
-
-    itemPicFourContainer.appendChild(itemPicFour);
-
-    itemTextFour.appendChild(itemNameFour);
-    itemTextFour.appendChild(itemDescriptionFour);
-
-    itemFour.appendChild(itemPicFourContainer);
-    itemFour.appendChild(itemTextFour);
-    itemFour.appendChild(itemPriceFour);
-
-    stuff.appendChild(itemOne);
-    stuff.appendChild(itemTwo);
-    stuff.appendChild(itemThree);
-    stuff.appendChild(itemFour);
-
+        stuff.appendChild(item);
+    });
 
     display.appendChild(stuff);
 
     return display;
-    }
+};
